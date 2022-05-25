@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    /* align-content: center;
+    justify-content: center; */
+    margin-top: 1rem;
+    border: 2px solid rgb(197, 190, 190);
+    padding: 0;
+    height: 205vh;
+    overflow: auto;
+}
+.buttons{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    margin: 1rem;
+}
+
+.margin{
+    margin: 1rem;
+}
+img{
+    border-radius: 50%;
+}
+.col-5{
+    background-color: rgba(128, 128, 128, 0.637);
+    padding-top: 1rem;
+
+}
+#nom .entete, #address .entete, #telephone .entete, .resume h3, .loisirs h3, .langues h3{
+   display: flex;
+   justify-content: space-between;
+}
+.fa-home, .fa-phone{
+    font-size: 2rem;
+    margin-right: 0.7rem;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a{
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 50%;
+    padding: 7px 15px;
+}
+.col-7{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    background-color: blue;
+    /* transform: translateX(-27rem); */
+}
+.col-7 .card{
+    width: 100%;
+    height: 26rem;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+.card p{
+    margin-left: 2rem;
+}
+/* .card .card-body .card-title{
+    display: flex;
+    justify-content: space-between;
+} */

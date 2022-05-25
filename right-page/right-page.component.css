@@ -1,0 +1,20 @@
+.col-7{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    background-color: blue;
+    transform: translateX(-27rem);
+}
+.col-7 .card{
+    width: 410%;
+    height: 26rem;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+.card p{
+    margin-left: 2rem;
+}
+/* .card .card-body .card-title{
+    display: flex;
+    justify-content: space-between;
+} */

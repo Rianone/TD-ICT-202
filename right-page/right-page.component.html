@@ -1,0 +1,38 @@
+<div class="col-7">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Education</h3>
+                <div id="education">
+                    <textarea class="form-control mt-2" type="text" placeholder="Ajouter un niveau d'education dans ce format (nom etablissment ou ville, diplome, annee)" id="input_education" [(ngModel)]="education"></textarea>
+                    <button class="btn btn-primary mt-2 mb-3" type="button" id="modif_education" (click)="addEdu()">Ajouter</button>
+                </div>
+                   <div id="educate" *ngFor="let edu of information[4].education">
+                      <h4 class="lead">{{edu.ville}}</h4><p>{{edu.diplome}} - ({{edu.annee}})</p>  
+                   </div>  
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Experience Professionnelle</h3>
+                  <div id="exp">
+                    <input class="form-control mt-2" type="text" placeholder="Ajouter une experience professionnelle" id="input_exp" [(ngModel)]="experience">
+                    <button class="btn btn-primary mt-2 mb-3" type="button" id="modif_exp" (click)="addExp()">Ajouter</button>
+                </div>
+                <div id="exper" *ngFor="let exp of information[5].experience">
+                    <li>{{exp}}</li>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Competences</h3>
+                    <div id="comp">
+                        <input class="form-control mt-2" type="text" placeholder="Ajouter une competence" id="input_comp" [(ngModel)]="competence">
+                        <button class="btn btn-primary mt-2 mb-3" type="button" id="modif_comp" (click)="addComp()">Ajouter</button>
+                    </div>
+                    <div id="compet" *ngFor="let cmp of information[6].competence">
+                        <li>{{cmp}}</li>
+                    </div>
+                </div>
+              </div>
+        </div>

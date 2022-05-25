@@ -1,0 +1,83 @@
+<div class="buttons">
+    <button class="btn btn-primary" type="button" routerLink="/">Retour</button>
+    <button class="btn btn-primary" type="button" ngxPrint printSectionId="container" printTitle="Mon CV" [useExistingCss]="true">Imprimer Ici</button>
+</div>
+<div class="container" id="container">
+    <div class="col-5">
+        <a href="" data-toggle="modal" data-target="#my-modal">
+            <img class="img-fluid img-rounded" id="image" alt="photo" src="../assets/img.jpg">
+        </a>
+            <div id="nom">
+                <div class="entete mb-3"><h2 class="text-center" id="names">{{information[0].nom}}</h2></div>
+            </div>
+    
+            <div id="address">
+                <div class="entete mb-3"><div><i class="fa fa-home" aria-hidden="true"></i> Adresse: <b id="adrr">{{information[0].adresse}}</b></div></div>
+            </div>
+            <div id="telephone">
+                <div class="entete"><div><i class="fa fa-phone" aria-hidden="true"></i> Numero de Telephone: <b id="teleph">{{information[0].telephone}}</b></div></div>
+            </div>
+    
+        <div class="links mt-3">
+            <a class="btn  btn-primary" href="mailto:smrianone95@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a class="btn  btn-primary"  href="https://github.com/Rianone"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a class="btn  btn-primary" href=""><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+            <a class="btn  btn-primary" href="https://www.linkedin.com/in/rianone-simo-34ab6b21a"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+    
+        <div class="resume mt-3">
+            <h3><b>Resume</b></h3>
+            {{information[1].resume}}
+            <p id="rsm"></p>
+        </div>
+    
+        <div class="mt-3 langues">
+            <h3><b>Niveau Linguistique</b></h3>
+            <div class="lang">
+                <div *ngFor="let lang of information[2].langues">
+                    <p>{{lang.nom}}</p>
+                    <div class="progress mt-2">
+                        <div class="progress-bar progress-bar-striped bg-primary active" role="progressbar">{{lang.niveau}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="loisirs mt-3">
+            <h3><b>Loisirs</b></h3>
+            <div id="lois">
+                <div *ngFor="let lois of information[3].loisirs">
+                    <li>{{lois}}</li>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="col-7">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Education</h3>
+               <div id="educate" *ngFor="let edu of information[4].education">
+                  <h4 class="lead">{{edu.ville}}</h4><p>{{edu.diplome}} - ({{edu.annee}})</p>  
+               </div>  
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Experience Professionnelle</h3>
+            <div id="exper" *ngFor="let exp of information[5].experience">
+                <li>{{exp}}</li>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Competences</h3>
+                <div id="compet" *ngFor="let cmp of information[6].competence">
+                    <li>{{cmp}}</li>
+                </div>
+            </div>
+          </div>
+    </div>
+
+</div>
