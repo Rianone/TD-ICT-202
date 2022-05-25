@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    /* align-content: center;
+    justify-content: center; */
+    margin-top: 1rem;
+    border: 2px solid rgb(197, 190, 190);
+    padding: 0;
+    height: 205vh;
+    overflow: auto;
+}
+.buttons{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    margin: 1rem;
+}
