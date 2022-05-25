@@ -1,0 +1,74 @@
+<div class="col-5">
+    <a href="" data-toggle="modal" data-target="#my-modal">
+        <img class="img-fluid img-rounded" id="image" alt="photo" src="../assets/img.jpg">
+    </a>
+        <div id="nom">
+            <div class="entete mb-3"><h2 class="text-center" id="names">{{information[0].nom}}</h2></div>
+            <div id="name" class="collapse form">
+                <input class="form-control mt-2" type="text" placeholder="Entrer le nouveau nom" id="input_nom" [(ngModel)]="nom"/>
+                <button type="button" class="btn btn-primary mt-2" id="modif_nom" (click)="setName()">Modifier</button>
+            </div>
+        </div>
+
+        <div id="address">
+            <div class="entete mb-3"><div><i class="fa fa-home" aria-hidden="true"></i> Adresse: <b id="adrr">{{information[0].adresse}}</b></div></div>
+            <div id="addr" >
+                <input class="form-control mt-2" type="text" placeholder="Entrer la nouvelle adresse" id="input_adress" [(ngModel)] ="adresse">
+                <button type="button" class="btn btn-primary mt-2" id="modif_adress" (click)="setAdr()">Modifier</button>
+            </div>
+        </div>
+        <div id="telephone">
+            <div class="entete"><div><i class="fa fa-phone" aria-hidden="true"></i> Numero de Telephone: <b id="teleph">{{information[0].telephone}}</b></div></div>
+            <div id="phone" >
+                <input class="form-control mt-2" type="text" placeholder="Entrer le nouveau numero de telephone" id="input_telephone" [(ngModel)]="telephone">
+                <button type="button" class="btn btn-primary mt-2 mb-2" id="modif_telephone" (click)="setTel()">Modifier</button>
+            </div>
+        </div>
+
+    <div class="links mt-3">
+        <a class="btn  btn-primary" href="mailto:smrianone95@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a class="btn  btn-primary"  href="https://github.com/Rianone"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="btn  btn-primary" href=""><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+        <a class="btn  btn-primary" href="https://www.linkedin.com/in/rianone-simo-34ab6b21a"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="resume mt-3">
+        <h3><b>Resume</b></h3>
+        {{information[1].resume}}
+        <div id="resume" >
+            <textarea class="form-control mt-2" type="text" placeholder="Entrer le nouveau resume" id="input_resume" [(ngModel)]="resume"></textarea>
+            <button class="btn btn-primary mt-2" type="button" id="modif_resume" (click)="setRsm()">Modifier</button>
+        </div>
+        <p id="rsm"></p>
+    </div>
+
+    <div class="mt-3 langues">
+        <h3><b>Niveau Linguistique</b></h3>
+        <div id="language" >
+            <textarea class="form-control mt-2" type="text" placeholder="Ajouter une langue dans ce format (nom de la langue,niveau exprimee en grade ex: C1,niveau exprimee en poucentage ex: 75)" id="input_lang" [(ngModel)]="langue"></textarea>
+            <button class="btn btn-primary mt-2 mb-3" type="button" id="modif_lang" (click)="addLang()">Ajouter</button>
+        </div>
+        <div class="lang">
+            <div *ngFor="let lang of information[2].langues">
+                <p>{{lang.nom}}</p>
+                <div class="progress mt-2">
+                    <div class="progress-bar progress-bar-striped bg-primary active" role="progressbar">{{lang.niveau}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loisirs mt-3">
+        <h3><b>Loisirs</b></h3>
+        <div id="loisirs" >
+            <input class="form-control mt-2" type="text" placeholder="Ajouter un loisir" id="input_loisir" [(ngModel)]="loisir">
+            <button class="btn btn-primary mt-2" type="button" id="modif_loisir" (click)="addLois()">Ajouter</button>
+        </div>
+        <div id="lois">
+            <div *ngFor="let lois of information[3].loisirs">
+                <li>{{lois}}</li>
+            </div>
+        </div>
+    </div>
+
+</div>
