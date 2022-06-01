@@ -1,0 +1,83 @@
+{
+  "information": {
+    "name": "",
+    "surname": "",
+    "cellphone": "",
+    "email": "",
+    "birthdate": "",
+    "birthPlace": "",
+    "residence": ""
+  },
+  "experiences": [
+    {
+      "startDate": "",
+      "endDate": "",
+      "name": "",
+      "agency": "",
+      "address": ""
+    },
+    {
+      "startDate": "",
+      "name": "",
+      "agency": "",
+      "address": ""
+    }
+  ],
+  "education": {
+    "school": "",
+    "startDate": "",
+    "endDate": "",
+    "address": ""
+  },
+  "license": [
+    {
+      "name": "",
+      "vote": 80
+    }
+  ],
+  "skills": [
+    {
+      "name": "",
+      "power": 5
+    },
+    {
+      "name": "",
+      "power": 2
+    },
+    {
+      "name": "",
+      "power": 4
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "agency": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "name": "",
+      "agency": "",
+      "startDate": ""
+    }
+  ],
+  "languages": [
+    {
+      "language": "",
+      "level": ""
+    },
+    {
+      "language": "",
+      "level": ""
+    },
+    {
+      "language": "",
+      "level": ""
+    },
+    {
+      "language": "",
+      "level": ""
+    }
+  ]
+}
