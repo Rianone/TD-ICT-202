@@ -1,4 +1,4 @@
-// Karma configuration file, see link for more information
+// Karma configuration file, see link for more informations
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
 module.exports = function (config) {
@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/cv'),
+      dir: require('path').join(__dirname, './coverage/cv-generator'),
       subdir: '.',
       reporters: [
         { type: 'html' },

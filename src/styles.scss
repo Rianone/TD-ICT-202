@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+@import "scss/variables/colors";
+@import "scss/variables/typography";
+@import "scss/variables/spacing";
+
+@import "scss/components/icons";
+@import "scss/components/sidenav";
+
+@import "scss/global";
+@import "~bootstrap-icons/font/bootstrap-icons";
+
+p,h5,h3  {
+  color: rgb(0, 0, 0);
+}
+
+body {
+  background: #e2f2ff;
+}
