@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: rgb(173, 230, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.contenaire{
+    position: relative;
+    width: 100%;
+    max-width: 9000px;
+    min-height: 900px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.contenaire .left_Side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.contenaire .right_Side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.profileText{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: rgb(247, 243, 243);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight:600;
+    line-height: 1.4em;
+
+}
+.profileText h2 span{
+    font-size: 0.8em;  
+    font-weight: 300;
+}
+.contactInfo{
+    color :#fff;
+    padding-top: 40px;
+}
+.title{
+    color:rgba(121, 134, 45, 0.733);
+    text-transform:600;
+    Letter-spacing:1px;
+    margin-bottom:20px;
+}
+.contactInfo ul{position:relative;}
+.contactInfo ul li{
+    position:relative;
+    list-style:none;
+    margin:10px 0;
+    cursor:pointer;
+}
+.contactInfo ul li .icon{
+    display:inline-block;
+    width:30px;
+    font-size: 18px;
+    color:#03f44b;
+}
+
+
+
+
+        </style>
+    </head>
+
+<body>
+
+    <div class="contenaire">
+        <div class="left_Side">
+            <div class="profileText">
+            <div class="imgBx">
+                <img src="../../../assets/index.jpeg">
+                
+            </div>
+            <button type="button" class="btn btn-success mt-3">update</button>
+            <h2>MBENGONO AKOA<br><span>Fullstack developper</span> </h2>
+            </div>
+            <div class="contactInfo">
+            <h3 class="title">contact info</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="text">+237 695331745</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-telegram" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">MBENGONO_AKOA</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                    <span class="text">salomonakoa44@gmail.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                    <span class="text">www.mywebsite.com</span>
+                </li>
+            </ul>
+            </div>
+            <div class="contactInfo education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                       <h5>2013-2016</h5>
+                       <h6>college Saint Benoit </h6>
+                    </li>
+                    <li>
+                        <h5>2017-2020</h5>
+                        <h6>College Pere Monti</h6>
+                    </li>
+                    <li>
+                        <h5>2020-2021</h5>
+                        <h6>Universite de yaounde 1</h6>
+                    </li>
+                    <h5>2021-2022</h5>
+                    <h6>Universite de yaounde 1</h6>
+                </ul>
+                </div>
+                
+
+        </div>
+        
+        <div class="right_Side">
+            <div class="shadow p-2 mb-5 bg-success rounded">Experience</div>
+            <div class="container">
+                          
+                                <h5 class="title">Fullstack</h5>
+                                <p class="description">
+                                    J'ai l'experience en matiere de developpement web Fullstack.
+                                </p>
+                          
+                                     
+                        <div class="timeline">
+                            <li class="list-group-item disabled mb-2" aria-disabled="true"></li>
+                            
+                                <h5 class="title">Product Designer</h5>
+                                <p class="description">
+                                    j'ai fais une formation de designe et j'ai deja eu a travailler pour une structure publique camerounaise.
+                                </p>
+                            
+                        </div>
+                       
+                            <div>
+                                <li class="list-group-item disabled mb-2" aria-disabled="true"></li>
+                                <h5 class="title">programation web </h5>
+                                <p class="description">
+                                   j'ai Concu plusieur sites web 
+                                </p>
+                            </div>
+                      
+                   
+                </div>
+        <div class="shadow p-2 mb-5 bg-success rounded mt-5 " >Competance</div>
+        <div>
+            <ul>
+                <li class="list-group-item disabled mb-2" aria-disabled="true"></li>
+                <li>Developpement mobile</li>
+                 <li>Programation web</li>
+                <li >Design</li>
+                <li >Big data</li><br>
+               
+                <input type="text" placeholder="ajouter une competance"><br>
+                <button type="button" class="btn btn-success">Ajouter</button>
+                <li class="list-group-item disabled mt-4" aria-disabled="true"></li>
+
+         </ul>
+        </div>
+        <div class="shadow p-2 mb-5 bg-success rounded">Hobbies</div>
+        <div>
+            <ul>
+                <li class="list-group-item disabled mb-2" aria-disabled="true"></li>
+                <li>Musiques</li>
+                 <li>basket-ball</li>
+                <li >Foot</li>
+                <li >jeux videos</li><br>
+               
+                <input type="text" placeholder="ajouter"><br>
+                <button type="button" class="btn btn-success">Ajouter</button>
+                <li class="list-group-item disabled mt-4" aria-disabled="true"></li>
+
+         </ul>
+        </div>
+        
+    </div>
+    </div>
+   
+
+</body>  
+</html>
+
